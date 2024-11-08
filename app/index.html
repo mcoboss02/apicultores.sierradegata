@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apicultores Sierra de Gata. Todo sobre la apicultura en la Sierra de Gata."
+    />
+    <meta
+      name="keywords"
+      content="apicultura,sierra de gata,apicultores,abejas,colmenas,mieles,producción de miel,producción de cera,producción de polen,producción de jalea real"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Apicultores Sierra de Gata" />
+    <meta
+      property="og:description"
+      content="Apicultores Sierra de Gata. Todo sobre la apicultura en la Sierra de Gata."
+    />
+    <meta property="og:url" content="https://apicultoressierradegata.com/" />
+    <link rel="stylesheet" href="styles/basic_style.css" />
+    <title>Apicultores Sierra de Gata</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <!-- Menú de Navegación -->
+    <nav>
+      <div class="div-logo">
+        <img src="../public/images/logo.png" alt="Logotipo Oficial" />
+      </div>
+
+      <!-- Ícono de menú para pantallas pequeñas -->
+      <div class="menu-icon" onclick="openMenu()">☰</div>
+
+      <div class="div-links-nav">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#recogida">Recogida</a>
+        <a href="#elaboracion">Elaboración</a>
+      </div>
+
+      <div class="div-links-nav-footer">
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#privacidad">Privacidad</a>
+      </div>
+
+      <div class="div-login-register">
+        <button class="button-login" onclick="Login()">Iniciar Sesión</button>
+      </div>
+
+      <!-- Botón de cierre del menú desplegable -->
+      <button class="close-menu-btn" onclick="closeMenu()">✕</button>
+    </nav>
+
+    <!-- Sección de Inicio (Hero) -->
+    <section id="inicio" class="hero">
+      <img
+        src="../public/images/banner.png"
+        alt="Apicultor en campo"
+        class="hero-image"
+      />
+      <div class="overlay">
+        <h1>Apicultores Sierra de Gata</h1>
+        <p>Todo sobre la apicultura en la Sierra de Gata</p>
+        <br /><br /><br />
+        <div class="buttons">
+          <div class="button-video">
+            <div class="icon">▶&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <span>Mirar Video</span>
+          </div>
+          <div class="button-historia">
+            <span>Historia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos-grid">
+        <div class="producto-card">
+          <img
+            src="../public/images/products/golden-nectar.png"
+            alt="Golden Nectar"
+          />
+          <h3>Golden Nectar</h3>
+          <span class="rotate-icon">⟳</span>
+        </div>
+        <div class="producto-card">
+          <img
+            src="../public/images/products/honeycomb-bliss.png"
+            alt="Honeycomb Bliss"
+          />
+          <h3>Honeycomb Bliss</h3>
+          <span class="rotate-icon">⟳</span>
+        </div>
+        <div class="producto-card">
+          <img
+            src="../public/images/products/drip-delight.png"
+            alt="Drip Delight"
+          />
+          <h3>Drip Delight</h3>
+          <span class="rotate-icon">⟳</span>
+        </div>
+        <div class="producto-card">
+          <img
+            src="../public/images/products/bee-flight.png"
+            alt="Bee Flight"
+          />
+          <h3>Bee Flight</h3>
+          <span class="rotate-icon">⟳</span>
+        </div>
+        <div class="producto-card">
+          <img
+            src="../public/images/products/dark-essence.png"
+            alt="Dark Essence"
+          />
+          <h3>Dark Essence</h3>
+          <span class="rotate-icon">⟳</span>
+        </div>
+        <div class="producto-card">
+          <img src="../public/images/products/wax-glow.png" alt="Wax Glow" />
+          <h3>Wax Glow</h3>
+          <span class="rotate-icon">⟳</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Recogida -->
+    <section id="recogida" class="recogida">
+      <h2>¿Cómo recogemos nuestra miel?</h2>
+      <div class="recogida-contenido">
+        <div class="recogida-item">
+          <p>
+            Nuestro equipo cuida cada colmena con dedicación, asegurando un
+            entorno natural y sostenible para que las abejas produzcan miel de
+            la más alta calidad.
+          </p>
+          <img src="../public/images/recogida-1.png" alt="Recolectando miel" />
+        </div>
+        <div class="recogida-item">
+          <p>
+            Utilizamos técnicas tradicionales para recolectar la miel de manera
+            cuidadosa, respetando el ciclo natural de las abejas y asegurando
+            que el producto final conserve todo su sabor.
+          </p>
+          <img src="../public/images/recodiga-2.png" alt="Colmena" />
+        </div>
+        <div class="recogida-item">
+          <p>
+            El resultado es una miel 100% pura, sin aditivos, lista para
+            endulzar tus días con todo el sabor y las propiedades nutritivas que
+            solo la naturaleza puede ofrecer.
+          </p>
+          <img src="../public/images/recogida-3.png" alt="Tarro de miel" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Elaboración -->
+    <section id="elaboracion" class="elaboracion">
+      <h2>Elaboración de nuestra miel</h2>
+      <video class="video-container" controls>
+        <source src="../public/videos/elaboracion.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <script src="scripts/navigation.js"></script>
+  </body>
+</html>

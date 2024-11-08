@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.auth-container {
+    width: 90vw;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login, .register {
+    display: none;
+}
+
+.login.active, .register.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+input[type="submit"] {
+    padding: 0.75rem;
+    background-color: #FFCC00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD700;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+.toggle {
+    color: #FFCC00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle:hover {
+    text-decoration: underline;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    margin: 0% auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.back:hover {
+    color: #333;
+}
+
+.back > span {
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: auto;
+    margin-top: 1rem;
+}

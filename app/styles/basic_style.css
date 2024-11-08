@@ -1,0 +1,526 @@
+/* Propiedades CSS Comunes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ededed;
+  margin: 0;
+}
+
+a {
+  font-style: italic;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0;
+}
+
+nav .div-logo img {
+  max-width: 10vw;
+  margin-top: 5vh;
+}
+
+nav .div-links-nav {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+nav .div-links-nav a {
+  width: 100%;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1vh 1vw;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .div-links-nav a.active {
+  background-color: #ffcc00;
+  color: black;
+}
+
+nav .div-links-nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  margin: 0 auto 2vh;
+}
+
+.div-login-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-login,
+.button-register {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-login {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.button-register {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 2px solid #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  margin-left: 300px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.button-video,
+.button-historia {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+}
+
+.button-video {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.button-historia {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 2px solid #ffd700;
+}
+
+/* Product Section */
+.productos {
+  padding: 5vh 5vw;
+  margin-left: 300px;
+}
+
+.productos h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.producto-card {
+  background-color: #fdf3dc;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+/* Recogida Section */
+.recogida {
+  margin-top: 5vh;
+  padding: 2rem;
+}
+
+.recogida h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.recogida-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Elaboración Section */
+.elaboracion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.elaboracion h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #000000;
+}
+
+.video-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem 0;
+  background-color: #000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Estilos para el overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Estilos para el contenido del popup */
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.popup-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilos para el botón de cierre */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Media Query para Pantallas Grandes */
+@media (min-width: 768px) {
+  .recogida-item {
+    flex-direction: row;
+  }
+
+  .video-container {
+    width: 70%;
+  }
+
+  .productos {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .productos > h2 {
+    position: absolute;
+    transform: translate(0%, -35vh);
+    font-size: 3rem;
+  }
+
+  .productos-grid {
+    margin-top: 10vh;
+  }
+
+  .recogida {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }
+
+  .recogida-item {
+    flex-direction: row;
+  }
+
+  .elaboracion {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .close-menu-btn {
+    display: none;
+  }
+
+  .rotate-icon:hover {
+    cursor: pointer;
+  }
+
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 768px) {
+  .hero > .overlay {
+    top: 55%;
+  }
+
+  .hero > .overlay > h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero > .overlay > p {
+    font-size: 1.2rem;
+  }
+
+  .hero > .buttons {
+    flex-direction: row;
+  }
+
+  .button-video {
+    font-size: 1.2rem;
+  }
+
+  .button-historia {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Solo mostrar logo e ícono de menú inicialmente */
+  nav .div-links-nav,
+  nav .div-links-nav-footer,
+  nav .div-login-register {
+    display: none; /* Ocultar enlaces */
+  }
+
+  nav .div-logo img {
+    max-width: 20vw;
+    margin: 0% auto;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer; /* Mostrar ícono de menú */
+  }
+
+  .menu-opened .menu-icon {
+    display: none;
+  }
+
+  /* Clase para desactivar el scroll en el body */
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh; /* Evita que el contenido sea desplazable */
+  }
+
+  /* Mostrar enlaces cuando el menú esté abierto */
+  .menu-opened {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .menu-opened .div-links-nav,
+  .menu-opened .div-links-nav-footer,
+  .menu-opened .div-login-register {
+    display: flex; /* Mostrar enlaces en el menú desplegado */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Estilo de los enlaces de navegación */
+  .menu-opened .div-links-nav a,
+  .menu-opened .div-login-register a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd700; /* Color amarillo dorado para el texto */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Animación de hover */
+  }
+
+  .menu-opened .div-links-nav a:hover,
+  .menu-opened .div-login-register a:hover {
+    background-color: #333; /* Fondo oscuro al pasar el cursor */
+    color: #ffd700; /* Color del texto en hover */
+  }
+
+  /* Mostrar el botón de cerrar solo cuando el menú esté abierto */
+  .menu-opened .close-menu-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffd700; /* Color amarillo dorado */
+    background: none;
+    border: none;
+  }
+
+  /* Botón de cerrar (X) */
+  .close-menu-btn {
+    display: none;
+  }
+
+  /* Ajustes de secciones y hero en pantalla pequeña */
+  section,
+  .hero,
+  #inicio {
+    margin-left: 0;
+  }
+
+  .hero img {
+    width: 100vw;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr;
+    margin-left: -300px;
+  }
+
+  .productos h2 {
+    margin-left: -300px;
+  }
+
+  .elaboracion {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
