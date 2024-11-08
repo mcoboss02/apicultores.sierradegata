@@ -24,3 +24,15 @@ Debes ser original en los estilos aplicados y aplicar la guía de estilo present
 - Uso de pseudoclases y pseudoelementos.    → 2 pts.
 - Estilos de formularios y menús            → 2 pts.
 - Botones, cursores.                        → 1 pts. 
+
+<br/>
+
+---
+
+<br/>
+
+<p style="text-align: center;">
+    <a href="./app/index.html">
+        <button type="button" style="display: inline-block;">Ir a la Web</button>
+    </a>
+</p>
